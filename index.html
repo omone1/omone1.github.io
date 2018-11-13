@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128661642-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-128661642-1');
+    </script>
+    <title>My Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href = "style.css">
+  <head>
+  <body>
+    <div id ="container">
+      <div id="header">
+        <div class ="nav-bar">
+          <ul id ="nav-list">
+            <li><a href="index.html" style = "margin-left:10px">Home</a></li>
+            <li><a href="general.html"> General</a></li>
+            <li style ="float:right; border-right:none;"><a href="mailto:jmoran25464@gmail.com">Contact</a></li>
+            <li style ="float:right" ><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="body">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <a href="webDevelopment.html">
+              <div class="numbertext">1 / 3</div>
+              <img src="webDevelopment.jpg" style="width:100%; height:300px;">
+              <div class="trans-box">
+                <div class="text">Thoughts on Web Development<br><small>Building a website and the peoples opinion</small></div>
+              </div>
+            </a>
+          </div>
+          <div class="mySlides fade">
+            <a href="">
+              <div class="numbertext">2 / 3</div>
+              <img src="gadgetFlow.jpg" style="width:100%; height:300px;">
+              <div class="trans-box">
+                <div class="text">Best website for new tech and startups<br><small>Website with th hottest new tech and startups</small></div>
+              </div>
+            </a>
+          </div>
+          <div class="mySlides fade">
+            <a href="become.html">
+              <div class="numbertext">3 / 3</div>
+              <img src="become.jpg" style="width:100%; height:300px;">
+              <div class="trans-box">
+                <div class="text">Becoming a Web Developer<br><small>The best way to learn and get online fast</small></div>
+              </div>
+            </a>
+          </div>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            <div class ="post-cat">
+              <h1>Trending</h1>
+                <div class = "post-pics">
+                  <a href="webDevelopment.html">
+                    <p>
+                      <strong>Thoughts on Web development</strong>
+                    </p>
+                    <p style="font-size:14px;">
+                      I have only been web developing for about two weeks now and it is a lot harder than some people make it seem.
+                      Some of these websites that people create have so many little quirks that I have no idea how to do.
+                      At the same time there are these huge popular companies with...
+                    </p>
+                    <img src="webDevelopment.jpg">
+                  </a>
+                </div>
+                <div class = "post-pics">
+                  <a href="">
+                    <p>
+                      <Strong>Favorite Tech Site</strong>
+                    </p>
+                    <p style ="font-size:14px;">
+                      One of my favorite websites for intresting and new technology is
+                      Gadget Flow. Their website may have some unsual and unique tech but...
+                    </p>
+                    <img src="gadgetFlow.jpg">
+                  </a>
+                </div>
+                <div class ="post-pics" style="border-bottom:none">
+                  <a href="">
+                    <p>
+                      <strong>Becoming a Web Developer and how to get started</strong>
+                    </p>
+                    <p style="font-size:14px;">
+                      When first starting to delve into the world of web developing you may find yourself surfing the web looking at some of the most
+                      popular websites to try and figure out where to start. This can you make you feel overwhelmed and a little afraid as these websites
+                      have been around for years and are constantly being worked on...
+                    </p>
+                    <img src="become.jpg">
+                  </a>
+                </div>
+              </div>
+              <div class = "post-margin">
+                <p></p>
+              </div>
+              <div class ="post-cat" style="margin-right:4%;margin-left:0;">
+                <h1> Most Popular</h1>
+                <div class="post-pics">
+                  <a href="become.html">
+                    <p>
+                      <strong>Becoming a Web Developer and How to Get Started</strong>
+                    </p>
+                    <p style = "font-size:14px;">
+                      When first starting to delve into the world of web developing you may find yourself surfing the web looking at some of the most
+                      popular websites to try and figure out where to start. This can you make you feel overwhelmed and a little afraid as these websites
+                      have been around for years and are constantly being worked on...
+                    </p>
+                    <img src ="become.jpg">
+                  </a>
+              </div>
+              <div class="post-pics">
+                <a href="webDevelopment.html">
+                  <p>
+                    <strong>Thoughts on Web Developmet</strong>
+                  </p>
+                  <p style ="font-size:14px;">
+                    I have only been web developing for about two weeks now and it is a lot harder than some people make it seem.
+                    Some of these websites that people create have so many little quirks that I have no idea how to do.
+                    At the same time there are these huge popular companies with...
+                  </p>
+                  <img src="webDevelopment.jpg">
+                </a>
+              </div>
+              <div class="post-pics" style="border-bottom:none">
+                <a href="">
+                  <p>
+                    <strong> Favorite Tech Site </strong>
+                  </p>
+                  <p style="font-size:14px;">
+                    One of my favorite websites for intresting and new technology is
+                    Gadget Flow. Their website may have some unsual and unique tech but...
+                  </p>
+                  <img src="gadgetFlow.jpg">
+                </a>
+              </div>
+            </div>
+        </div>
+        <div>
+          <a href="" style="margin-left:90%;">More Posts🡆</a>
+        </div>
+      <div id = "footer">
+      </div>
+    </div>
+  </body>
+</html>

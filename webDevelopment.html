@@ -1,0 +1,67 @@
+<html>
+  <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128661642-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-128661642-1');
+    </script>
+    <title>My Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href = "style.css">
+  </head>
+  <body style="background-color:lightgrey">
+    <div class ="nav-bar">
+      <ul id ="nav-list">
+        <li><a href="index.html" style = "margin-left:10px">Home</a></li>
+        <li><a href="general.html"> General</a></li>
+        <li style ="float:right; border-right:none;"><a href="mailto:jmoran25464@gmail.com">Contact</a></li>
+        <li style ="float:right" ><a href="about.html">About</a></li>
+      </ul>
+    </div>
+      <div class="art-temp" style="float:right;">
+        <h1 style="text-align:center;"class="display-4">My Thoughts on Web Development and<br>its Current State</h1>
+        <div class="post-author">
+          <p> Joseph Moran </p>
+          <p>11/5/2018</p>
+        </div>
+        <img src="webDevelopment.jpg">
+        <div class="column">
+          <p id="article">
+            I would like to inform you that as I am writing this article I have only about a month and a half of experience with web development and in no way do I consider
+            myself and expert. However I would like to share my thoughts on some things about web development and am if any of you feel the same. The first thing that I noticed while
+            learning html and css is how chaotic it is to position objects where you want them on the webpage. Using floats, margins and padding to position an object to be
+            at the exact spot of your choosing is too much of a hassle and consists a lot of trial an error. Bootstrap offers a little bit of a better way to organize objects
+            but it still is not the best. It would be great if somehow there was a way to say you want the center of this object to be at this x-position and this y-position. This sounds like a good idea
+            (at least in my head). One thing I do like however, is how easy it really is to pick up on web development as a whole. It definitely is a good starting language if you are looking into
+            getting into programming.
+
+          </p>
+        </div>
+        <div class="sim-art" style="margin-left:20px; position:sticky;">
+          <div class="card-art">
+            <h3> <u>Similar Articles</u></h3>
+            <a href="become.html">
+              <div class="card" style="width:350px; background-color:white;">
+                <img class="card-img-top" src="become.jpg" alt="Card image" style="width:100%;top:0;">
+                <div class="card-body">
+                  <h4 class="card-title">Becoming a Web Developer</h4>
+                  <p class="card-text">How to get started as a web developer</p>
+                </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id = "footer">
+    </div>
+  </body>
+</html>
