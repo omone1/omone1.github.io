@@ -8,6 +8,7 @@ body{
 }
 #body{
   padding-bottom:135px; /* Height of the footer */
+  height:100%;
 }
 #container{
   min-height:100%;
@@ -159,6 +160,9 @@ p{
   font-size: 18px;
   color:black;
   margin-top: 50px;
+  line-height: 40px;
+  font-family:Verdana;
+  text-align:justify;
 }
 
 * {box-sizing: border-box}
@@ -269,3 +273,70 @@ img {vertical-align: middle;}
   margin-left:400px;
   margin-right:300px;
 }
+.Large-body{
+  float:left;
+  margin-left: 350px;
+  width:600px;
+  height:400px;
+  background-color:lightgrey;
+  margin-top: 20px;
+  margin-bottom:10px;
+}
+.side-body{
+  height:400px;
+  width:200px;
+  float:left;
+  background-color: green;
+  margin-top:20px;
+  margin-bottom: 10px;
+  border-left:3px solid black;
+}
+.med-body{
+  clear:both;
+  border-top: 5px solid black;
+  padding:20px;
+  width:70%;
+  height:auto;
+  background-color:white;
+  margin-left: 220px;
+}
+#text-page{
+  float:left;
+  width:20%;
+  vertical-align: middle;
+  margin-left: 40px;
+  color:grey;
+  font-size:14px;
+  padding:10px 0;
+  text-align:center;
+}
+#img-page{
+  float:left;
+  height:auto;
+  margin-bottom:20px;
+  margin-left: 150px;
+  padding:10px 0;
+  text-align:center;
+}
+#head-page{
+  float:left;
+  width:30%;
+  margin-bottom: 20px;
+  color:black;
+}
+.med-content{
+  display:inline-block;
+}
+.gen-head{
+  position:absolute;
+  text-align:center;
+  width: 600px;
+  color:black;
+  font-weight:bold;
+  background-color:rgba(255,255,255,.4);
+}
+.side-cont{
+  height:200px;
+  border-bottom: 3px solid black;
+}
+
