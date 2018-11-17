@@ -58,10 +58,12 @@ body{
 }
 a{
   color:#254558;
+}
+a:link{
   text-decoration: none;
 }
 a:hover{
-  color: grey;
+  color:#254558;
 }
 .post{
   max-width: 400px;
@@ -129,6 +131,7 @@ p{
 .post-pics{
   border-bottom:1px solid grey;
   height: 500px;
+  display:inline-block;
 }
 .post-pics p{
   margin-top: 10px;
@@ -141,7 +144,7 @@ p{
 }
 .post-margin{
   background-color:#254558;
-  height:1600px;
+  height:1557px;
   float:left;
   width:1%;
 }
@@ -286,10 +289,13 @@ img {vertical-align: middle;}
   height:400px;
   width:200px;
   float:left;
-  background-color: green;
   margin-top:20px;
   margin-bottom: 10px;
-  border-left:3px solid black;
+  margin-left: 10px;
+  border-left:none;
+}
+.side-cont:hover{
+  background-color:rgba(128,128,128,.1);
 }
 .med-body{
   clear:both;
@@ -327,6 +333,12 @@ img {vertical-align: middle;}
 .med-content{
   display:inline-block;
 }
+.med-body:hover{
+  background-color:rgba(128,128,128,.1);
+}
+.post-pics:hover{
+  background-color:rgba(128,128,128,.1);
+}
 .gen-head{
   position:absolute;
   text-align:center;
@@ -336,7 +348,26 @@ img {vertical-align: middle;}
   background-color:rgba(255,255,255,.4);
 }
 .side-cont{
-  height:200px;
+  height:133.33px;
   border-bottom: 3px solid black;
+  font-weight:bold;
+  font-size:18px;
+  text-align:center;
+  color:black;
 }
-
+.page-but{
+  clear:both;
+  margin-left: 650px;
+  margin-top:40px;
+}
+.buttons:hover{
+  background-color:#eafc40;
+}
+.buttons{
+  float:left;
+  border:1px solid black;
+  text-align:center;
+  width:25px;
+  height:25px;
+  margin-left:10px;
+}
