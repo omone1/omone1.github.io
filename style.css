@@ -70,7 +70,7 @@ a:link{
   text-decoration: none;
 }
 a:hover{
-  color:#254558;
+  color:grey;
 }
 .post{
   max-width: 400px;
@@ -107,19 +107,6 @@ p{
   text-align:center;
 }
 
-.post-container:nth-child(even){
-  background-color: #f2f2f2;
-}
-.post-container{
-  width:800px;
-  text-align:center;
-  float:left;
-  clear:both;
-  border-right:1px solid black
-}
-.post-container h2{
-  font-size: 38px;
-}
 .post-cat{
   vertical-align:top;
   text-align: center;
@@ -276,11 +263,13 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 .sim-art{
-  margin-top: -40%;
-  float:left
+  clear:both;
+  width:100%;
+  margin-top:100px;
 }
+
 .column{
-  margin-left:400px;
+  margin-left:310px;
   margin-right:300px;
 }
 .Large-body{
@@ -377,4 +366,9 @@ img {vertical-align: middle;}
   width:25px;
   height:25px;
   margin-left:10px;
+}
+.sim-list{
+  margin-left:70px;
+  margin-right:50px;
+  margin-bottom: 20px;
 }
